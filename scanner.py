@@ -3,6 +3,8 @@ from colorama import Fore,Style # تلوين النصوص
 from pyfiglet import Figlet
 from tqdm import tqdm # شريط تقدم أثناء الفحص
 import time # تاخير بسيط بين كل فحص و فحص
+import os
+os.system("clear")
 
 def display_title():
     f=Figlet(font='slant') # نوع الخط
@@ -39,4 +41,5 @@ def main():
 
 if __name__=="__main__":
     main()        
+
      

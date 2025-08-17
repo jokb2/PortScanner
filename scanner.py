@@ -26,8 +26,8 @@ def scan_ports(target,ports):
 
 def main():
     display_title()
-    target=input("Enter target IP :")
-    ports_input = input("Enter ports separated with comma like 20,22,443,80 :")
+    target=input("Enter target IP or domain :")
+    ports_input = input("Enter ports separated with comma like 80:")
     try:    
         ports = [int(p.strip()) for p in ports_input.split(",") if p.strip().isdigit()]
 
@@ -43,3 +43,4 @@ if __name__=="__main__":
     main()        
 
      
+
